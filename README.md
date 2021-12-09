@@ -5,7 +5,7 @@ The project includes a web app where an emergency worker can input a new message
 
 Below are a few screenshots of the web app.
 <img src="assets/disaster-response-project1.png" width="80%" alt="disaster response project web app">
-<img src="assets/disaster-response-project2.png" width="80%" alt="disaster response project web app">
+<img src="assets/disaster-response-project2.PNG" width="80%" alt="disaster response project web app">
 
 
 
