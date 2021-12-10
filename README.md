@@ -1,13 +1,17 @@
 # Disaster_Response_Pipeline
 ## Motivation
-This project analyzes real disaster data messages from [Figure Eight](https://appen.com/) and builds an API model that classifies disaster messages by creating a machine learning pipeline to categorize these disaster events so that you can send the messages to an appropriate disaster relief agency.
+This project analyzes real disaster data messages and builds an API model that classifies disaster messages by creating a machine learning pipeline to categorize these disaster events so that you can send the messages to an appropriate disaster relief agency.
 The project includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app also displays visualizations of the data.
 
 Below are a few screenshots of the web app.
 <img src="assets/disaster-response-project1.png" width="80%" alt="disaster response project web app">
 <img src="assets/disaster-response-project2.PNG" width="80%" alt="disaster response project web app">
 
+## Dataset Description
+The dataset containes 26248 disaster messages obtained from [Figure Eight](https://appen.com/) and classified into three genres (direct, news and social). The dataset also contains 36 different categories to classify each disaster message.
 
+## Classifier
+The classifier consists of a pipeline that compromises of a text processing and ml classifer pipeline. The text processing pipline uses a count vectorizer and tf-idf algorithms. The ml classifer is a multi output classifer that uses random forest algorithm. 
 
 ## Libraries
 - pandas
@@ -30,7 +34,7 @@ This file contains a machine learning pipeline that:
 - Loads data from the SQLite database
 - Splits the dataset into training and test sets
 - Builds a text processing and machine learning pipeline
-- Trains and tunes a model using GridSearchCV
+- Trains and tunes the a model using GridSearchCV
 - Outputs results on the test set
 - Exports the final model as a pickle file
 
